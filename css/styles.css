@@ -1,7 +1,8 @@
 /*.....................COMMON.......................*/
 
 .wrapper,
-.footer {
+.container-head,
+.container-foot {
 
     width: 1100px;
     margin: 0 auto;
@@ -60,7 +61,7 @@ body {
 }
 
 
-.container {
+.wrapper {
     margin-top: 13px;
 }
 
@@ -113,6 +114,12 @@ body {
     text-align: right;
 }
 
+
+.container-head {
+    position: relative;
+}
+
+
 .header__workschedule-link {
 
     font-size: 14px;
@@ -120,6 +127,8 @@ body {
     line-height: 14px;
 
 }
+
+
 
 .header__workschedule-link:hover {
     color: #fff;
@@ -129,9 +138,11 @@ body {
     display: block;
 }
 
+
+
 .header__workschedule-content {
 
-       display: none;
+    display: none;
     width: 162px;
     height: 71px;
     background-color: #fff;
@@ -143,9 +154,10 @@ body {
 
     text-align: center;
     border-radius: 4px;
-
+    z-index: 2;
 
 }
+
 
 .header__workschedule-content:before {
 
@@ -169,7 +181,7 @@ body {
     line-height: 18px;
     text-align: center;
     margin: 15px 0 10px;
-  
+
 }
 
 .header__workschedule-content-lunch {
@@ -178,16 +190,16 @@ body {
     color: #221f1f;
     line-height: 18px;
     text-align: center;
-       margin-top: 5px;
+    margin-top: 5px;
 }
 
 /*......................NAV........................*/
 
 .menu {
-    margin-top: 20px;
+    margin-top: 16px;
     margin-left: 20px;
 
-    width: 115px
+    width: 120px;
 }
 
 
@@ -195,15 +207,15 @@ body {
 .menu__list {
     list-style: none;
     padding: 0;
-    margin: 0;
 
 
 }
 
 .menu__item {
 
-    margin-bottom: 22px;
-    ;
+    margin-bottom: 30px;
+    margin-top: 0;
+
 
 }
 
@@ -213,17 +225,13 @@ body {
     color: #4b73b5;
     text-transform: uppercase;
     text-decoration: none;
-
-}
-
-.menu__text {
-    padding: 4px;
+    letter-spacing: 2px;
 
 }
 
 
 
-.menu__icon-1 {
+.menu__item:first-child .menu__icon {
     height: 18px;
     width: 23px;
     margin-right: 15px;
@@ -233,7 +241,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.menu__icon-2 {
+.menu__item:nth-child(2) .menu__icon {
     height: 18px;
     width: 23px;
     margin-right: 15px;
@@ -243,8 +251,7 @@ body {
     background-repeat: no-repeat;
 }
 
-
-.menu__icon-3 {
+.menu__item:last-child .menu__icon {
     height: 18px;
     width: 23px;
     margin-right: 15px;
@@ -255,13 +262,12 @@ body {
 }
 
 
-
-.menu__icon-2:hover {
+.menu__item:nth-child(2) .menu__icon:hover {
     background-image: url(../img/menu_star_black_icon.png);
     background-repeat: no-repeat;
 }
 
-.menu__icon-3:hover {
+.menu__item:last-child .menu__icon:hover {
     background-image: url(../img/menu_team_black.png);
     background-repeat: no-repeat;
 }
@@ -278,6 +284,14 @@ body {
 }
 
 
+/*......................AIRPLANE........................*/
+
+.airplane {
+    width: 901px;
+    height: 299px;
+    background-image: url(../img/airplane.png);
+}
+
 
 /*......................TARIFFS........................*/
 
@@ -286,19 +300,28 @@ body {
     font-size: 49px;
     text-transform: capitalize;
 
-    margin: 0;
+    margin-left: -7px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    padding: 0;
+
+}
+
+.tariffs__list {
+    margin: 20px 0 40px;
     padding: 0;
 
 }
 
 .tariffs__list .tariffs__item {
     display: inline-block;
+
 }
 
 
 .tariffs__item {
     width: 250px;
-    margin-right: 10px;
+
 
 }
 
@@ -307,46 +330,111 @@ body {
     border: 1px solid #e8e9ed;
     border-radius: 5px;
 
+    margin-right: 28px;
+
 }
 
 .tariffs__icon {
     background-color: #4b73b5;
     border-radius: 50%;
-    width: 73px;
-    height: 73px;
+    width: 66px;
+    height: 66px;
     text-align: center;
 
-    margin: 41px auto 34px;
+    margin-left: 93px;
 
 }
 
-.tariffs__icon-img {
-    margin-top: 20px;
+.tariffs__item:first-child .tariffs__icon {
+    background-image: url(../img/tariffs_flower.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.tariffs__item:nth-child(2) .tariffs__icon {
+    background-color: #4b73b5;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    text-align: center;
+
+    margin-top: 47px;
+    margin-left: 102px;
+
+    background-image: url(../img/tariffs_star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.tariffs__item:last-child .tariffs__icon {
+    background-image: url(../img/tariffs_palette.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 
 .tariffs__class {
     font-family: 'Roboto-Bold', Arial, sans-serif;
-    font-size: 10.78px;
+    font-size: 11px;
     text-transform: uppercase;
-    text-align: center;
+     letter-spacing: 2px;
 
-    margin: 0;
+    margin-top: 33px;
+   margin-left: 89px; 
     padding: 0;
 }
 
+.tariffs__item:nth-child(2)
+.tariffs__class{
+     margin-left: 105px;
+}
+
+.tariffs__item:last-child
+.tariffs__class{
+     margin-left: 92px;
+} 
+
 .tariffs__text {
-    text-align: center;
+  
 
     line-height: 30px;
-    margin: 25px 33px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    text-indent: 5px;
     padding: 0;
+}
+
+.tariffs__item:nth-child(2)
+.tariffs__text {
+  
+    margin-left: 46px;
+      text-indent: 26px;
+}
+
+
+.tariffs__item:last-child
+.tariffs__text {
+   
+    margin-left: 58px;
+      text-indent: -10px;
 }
 
 .tariffs__description-list {
     list-style: disc inside;
-    line-height: 30px;
+    line-height: 35px;
+
+    padding-left: 23px;
+    margin: 0 5px;
+    
 }
 
+.tariffs__item:nth-child(2)
+.tariffs__description-list {
+    padding-left: 35px;
+}
 
 .tariffs__price {
     font-family: 'Roboto-Regular', arial, sans-serif;
@@ -354,27 +442,33 @@ body {
     color: #212121;
 
     text-align-last: center;
-    margin-top: 40px;
+    margin-top: 17px;
     margin-bottom: 49px;
 
 }
 
 
 .tariffs__dollar {
-    font-size: 30px;
+    font-size: 32px;
 
 }
 
+.tariffs__item:nth-child(2)
+.tariffs__price
+{
+    margin-left: 32px;
+}
 
 /*......................NEWS........................*/
 
 .news__title {
     font-family: 'Roboto-Bold', Arial, sans-serif;
     font-size: 49px;
-    text-transform: capitalize;
+    text-transform: full-width;
 
-    margin: 59px 0 0;
+    margin-top: 7px;
     padding: 0;
+
 
 }
 
@@ -382,7 +476,7 @@ body {
     list-style: none;
     display: inline-block;
     padding: 0;
-    margin: 0;
+    margin: 25px 0;
 }
 
 
@@ -397,27 +491,27 @@ body {
 
 .news__date {
 
-    margin: 0;
+    margin: px;
     font-size: 14px;
     color: #656464;
-    line-height: 21px;
+   
 }
 
 .news__content-title {
-    margin: 0;
+    margin: 5px 0 0;
     font-family: 'Roboto-Bold', Arial, sans-serif;
     font-size: 18px;
-    line-height: 21px;
+   
 }
 
 .news__text {
     line-height: 30px;
-    margin: 0;
+    margin-top: 10px;
     padding-right: 70px;
 }
 
 .news__item {
-    margin: 40px 0;
+    margin-bottom: 25px;
 }
 
 
@@ -426,38 +520,36 @@ body {
     background-color: #f5f5f5;
     height: 2px;
     border: none;
+    
 }
 
 /*.............  ALL-PAGES__LIST.....................*/
 
 .all-pages {
-    margin: 10px 0 53px;
+   margin: 8px 0 63px;
 
 }
 
-.all-pages__list {
-    text-align: center;
-}
 
 
-.all-pages__list .all-pages__item {
+.all-pages__list .all-pages__item{
     display: inline;
 }
 
 
-.all-pages__item {
-
-    margin-right: 12px;
-
+.all-pages__list {
+    
+    margin: -1px 0 0 230px;
 }
 
 .all-pages__text {
     font-family: 'Roboto-Light', arial, sans-serif;
     font-size: 14px;
     color: #656464;
+    margin-right: 10px;
+    
 
-
-
+      
 }
 
 .all-pages__link {
@@ -465,28 +557,32 @@ body {
     font-size: 14px;
     text-decoration: none;
     color: #221f1f;
+    margin: 0 6px;
 }
 
-
-.all-pages__link-1 {
+.all-pages__item:first-child
+.all-pages__link {
     font-family: 'Roboto-Light', arial, sans-serif;
     color: #656464;
 }
 
-.all-pages__link1_active {
-    color: #fff;
-
-}
 
 .all-pages__link_active {
     display: inline-block;
     background-color: #4b73b5;
+    
+   
     color: #fff;
     border-radius: 2px;
-    width: 25px;
-    height: 25px;
 
-    margin: 0 -5px;
+    width: 25px;
+    height: 21px;
+    text-align: center;
+    
+
+    margin:0;
+    padding:0;
+   
 
 }
 
@@ -495,28 +591,36 @@ body {
 .footer {
 
     background-color: #4b73b5;
+
+}
+
+.container-foot {
+
     position: relative;
 }
 
 .footer__content {
     float: left;
-    width: 255px;
+ width: 300px;
 
     font-size: 14px;
     line-height: 18px;
     color: #fff;
-
+    margin:0;
+    padding:0;
+/*box-sizing: border-box;*/
 
 }
 
 .footer__text {
-    margin: 10px 0 10px 19px;
-    padding: 0;
+padding: 11px 6px 0 20px;
+ margin:0;
 }
 
 .footer__content-link {
     font-family: 'Roboto-Bold', Arial, sans-serif;
     color: #fff;
+  
 }
 
 .footer__content-link:hover {
@@ -549,13 +653,18 @@ body {
 }
 
 .footer__social-list .footer__social-item {
-    display: inline;
+    display: inline-block;
 }
 
 .footer__social-list {
-    margin: 0 16px;
+   margin: 0 0 0 17px;
     padding: 0;
 
+}
+
+.footer__social-item {
+    
+margin-right: 6px;    
 }
 
 .footer__socialicon-circle {
@@ -566,12 +675,41 @@ body {
     border-radius: 50%;
     text-align: center;
 
-    display: inline-block;
 
-    margin-right: 7px;
 }
 
 
 .footer__socialicon-circle:hover {
     background-color: #fff;
+}
+
+.footer__social-item:first-child .footer__socialicon-circle {
+    background-image: url(../img/footer_vk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.footer__social-item:nth-child(2) .footer__socialicon-circle {
+    background-image: url(../img/footer_fb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__social-item:nth-child(3) .footer__socialicon-circle {
+    background-image: url(../img/footer_google.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__social-item:nth-child(4) .footer__socialicon-circle {
+    background-image: url(../img/footer_twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__social-item:last-child .footer__socialicon-circle {
+    background-image: url(../img/footer_mail.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
