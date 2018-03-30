@@ -1,0 +1,31 @@
+.comments-info {
+    background: #4bb56b;
+    background-image: url(../../img/comments_bg.png);
+    margin-bottom: 59px;
+}
+
+
+
+
+.comments-info-content {
+
+    font-family: 'Roboto-Light', Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    text-align: left;
+
+    padding: 40px 244px 40px 228px;
+}
+
+.comments-info__link {
+	 font-family: 'Roboto-Bold', Arial, sans-serif;
+	text-decoration: underline;
+	color: #fff;
+}
+
+.comments-info-tel {
+	font-family: 'Roboto-Bold', Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+}

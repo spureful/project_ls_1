@@ -1,0 +1,156 @@
+.tariffs__title {
+    font-family: 'Roboto-Bold', Arial, sans-serif;
+    font-size: 49px;
+    text-transform: capitalize;
+
+    margin-left: -7px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    padding: 0;
+
+}
+
+.tariffs__list {
+    margin: 20px 0 40px;
+    padding: 0;
+
+}
+
+.tariffs__list .tariffs__item {
+    display: inline-block;
+
+}
+
+
+.tariffs__item {
+    width: 250px;
+
+
+}
+
+
+.tariffs__item:nth-child(2) {
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+
+    margin-right: 28px;
+
+}
+
+.tariffs__icon {
+    background-color: #4b73b5;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    text-align: center;
+
+    margin-left: 93px;
+
+}
+
+.tariffs__item:first-child .tariffs__icon {
+    background-image: url(../../img/tariffs_flower.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tariffs__item:nth-child(2) .tariffs__icon {
+    background-color: #4b73b5;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    text-align: center;
+
+    margin-top: 47px;
+    margin-left: 102px;
+
+    background-image: url(../../img/tariffs_star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.tariffs__item:last-child .tariffs__icon {
+    background-image: url(../../img/tariffs_palette.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.tariffs__class {
+    font-family: 'Roboto-Bold', Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-top: 33px;
+    margin-left: 89px;
+    padding: 0;
+}
+
+.tariffs__item:nth-child(2) .tariffs__class {
+    margin-left: 105px;
+}
+
+.tariffs__item:last-child .tariffs__class {
+    margin-left: 92px;
+}
+
+.tariffs__text {
+
+
+    line-height: 30px;
+    margin-left: 40px;
+    margin-bottom: -1px;
+    text-indent: 5px;
+    padding: 0;
+}
+
+.tariffs__item:nth-child(2) .tariffs__text {
+
+    margin-left: 46px;
+    text-indent: 26px;
+}
+
+
+.tariffs__item:last-child .tariffs__text {
+
+    margin-left: 58px;
+    text-indent: -10px;
+}
+
+.tariffs__description-list {
+    list-style: disc inside;
+    line-height: 35px;
+
+    padding-left: 23px;
+    margin: 0 5px;
+
+}
+
+.tariffs__item:nth-child(2) .tariffs__description-list {
+    padding-left: 35px;
+}
+
+.tariffs__price {
+    font-family: 'Roboto-Regular', arial, sans-serif;
+    font-size: 53.89px;
+    color: #212121;
+
+    text-align-last: center;
+    margin-top: 17px;
+    margin-bottom: 50px;
+
+}
+
+
+.tariffs__dollar {
+    font-size: 32px;
+
+}
+
+.tariffs__item:nth-child(2) .tariffs__price {
+    margin-left: 32px;
+}

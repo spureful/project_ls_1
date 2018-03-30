@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1100, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Airplanet_project</title>
+    <title>Airplanet_main</title>
     <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,10 +13,10 @@
 </head>
 
 <body>
-
+<div class="wrapper">
     <header class="header">
-        <div class="container-head">
-            <div class="header__logo"><img src="img/logo_header.png" alt="logo_header" class="header__logo-img"></div>
+        <div class="container">
+            <div class="header__logo"><img src="img/logo_header.png" alt="Логотип" class="header__logo-img"></div>
 
             <div class="header__info">
                 <a href="tel:+78000039210" class="header__phone-number">8 (800) 00-392-10</a>
@@ -34,7 +34,7 @@
 
     </header>
 
-    <div class="wrapper clearfix">
+    <div class="container clearfix">
         <aside class="nav">
             <nav class="menu">
 
@@ -42,17 +42,17 @@
 
 
 
-                    <li class="menu__item">
+                    <li class="menu__item menu__item_active menu__link">
 
                         <span class="menu__icon"> </span>
 
-                        <div class="menu__link  menu__page_active">главная</div>
+                        главная
                     </li>
 
 
 
                     <li class="menu__item">
-                        <a href="#" class="menu__link"> <span class="menu__icon "> </span>                       отзывы</a>
+                        <a href="comments.html" class="menu__link"> <span class="menu__icon "> </span>                       отзывы</a>
                     </li>
 
                     <li class="menu__item">
@@ -141,60 +141,61 @@
 
             </section>
 
-            <section class="news">
+            <section class="content">
 
-                <h2 class="news__title">Последние новости</h2>
+                <h2 class="content__title">Последние новости</h2>
 
-                <ul class="news__list">
+                <ul class="content__list">
 
-                    <li class="news__item">
+                    <li class="content__item">
 
-                        <div class="news__avatar"><img src="img/news_plane.jpg" alt="news_plane" class="news__avatar-img"></div>
+                        <div class="content__avatar"><img src="img/news_plane.jpg" alt="Самолет" class="content__avatar-img"></div>
 
-                        <div class="news__content">
-                            <div class="news__date">12.10.2016</div>
+                        <div class="content__content">
+                            <div class="content__date">12.10.2016</div>
 
-                            <h3 class="news__content-title">Ночные перелёты дешевле!</h3>
+                            <h3 class="content__content-title">Ночные перелёты дешевле!</h3>
 
-                            <p class="news__text">Летящий в ночном небе самолет — зрелище загадочное и романтическое. Крылатая машина величественно плывет в вышине, мерцая разноцветными огнями, и почему-то кажется, что она наполнена удивительными людьми, спешащими далеко-далеко по очень важным делам. </p>
+                            <p class="content__text">Летящий в ночном небе самолет — зрелище загадочное и романтическое. Крылатая машина величественно плывет в вышине, мерцая разноцветными огнями, и почему-то кажется, что она наполнена удивительными людьми, спешащими далеко-далеко по очень важным делам. </p>
                         </div>
 
                     </li>
                     <li>
-                        <hr class="news__line news__item">
+                        <hr class="content__line">
                     </li>
-                    <li class="news__item">
+                    <li class="content__item">
 
-                        <div class="news__avatar"><img src="img/news_mount.jpg" alt="news_mount" class="news__avatar-img"></div>
+                        <div class="content__avatar"><img src="img/news_mount.jpg" alt="Горы" class="content__avatar-img"></div>
 
-                        <div class="news__content">
-                            <div class="news__date">01.02.2016</div>
+                        <div class="content__content">
+                            <div class="content__date">01.02.2016</div>
 
-                            <h3 class="news__content-title">Путешествие в Грузию стало доступнее</h3>
+                            <h3 class="content__content-title">Путешествие в Грузию стало доступнее</h3>
 
-                            <p class="news__text">Экскурсии по Грузии в 2017 году от русских гидов: самые интересные маршруты в Грузии от профессиональных гидов. Обзорные, пешеходные, автомобильные, тематические экскурсии по интересным городам и курортам Грузии. Не пропустите такую возможность!</p>
+                            <p class="content__text">Экскурсии по Грузии в 2017 году от русских гидов: самые интересные маршруты в Грузии от профессиональных гидов. Обзорные, пешеходные, автомобильные, тематические экскурсии по интересным городам и курортам Грузии. Не пропустите такую возможность!</p>
                         </div>
 
                     </li>
 
                     <li>
-                        <hr class="news__line news__item"> </li>
+                        <hr class="content__line "> </li>
 
-                    <li class="news__item">
+                    <li class="content__item">
 
-                        <div class="news__avatar"><img src="img/news_travel.jpg" alt="news_travel" class="news__avatar-img"></div>
+                        <div class="content__avatar"><img src="img/news_travel.jpg" alt="Путешествие" class="content__avatar-img"></div>
 
-                        <div class="news__content">
-                            <div class="news__date">22.12.2015</div>
+                        <div class="content__content">
+                            <div class="content__date">22.12.2015</div>
 
-                            <h3 class="news__content-title">Детские авиабилеты доступны для бизнес-класса</h3>
+                            <h3 class="content__content-title">Детские авиабилеты доступны для бизнес-класса</h3>
 
-                            <p class="news__text">Путешествие на самолете с детьми - небольшое испытание для родителей. Но это не экстремальное приключение, а обычный цивилизованный поход. Тем более, различные авиакомпании стараются помочь скидками на детские авиабилеты, специальным питанием и другими услугами на борту лайнера.</p>
+                            <p class="content__text">Путешествие на самолете с детьми - небольшое испытание для родителей. Но это не экстремальное приключение, а обычный цивилизованный поход. Тем более, различные авиакомпании стараются помочь скидками на детские авиабилеты, специальным питанием и другими услугами на борту лайнера.</p>
                         </div>
 
                     </li>
 
-
+<li>
+                            <hr class="content__line "> </li>
 
                 </ul>
             </section>
@@ -206,6 +207,7 @@
                 <ul class="all-pages__list">
 
                     <li class=" all-pages__item all-pages__text">Страница 1 из 7</li>
+                    
                     <li class="all-pages__item "> <a href="#" class="all-pages__link all-pages__link">&lt;</a></li>
 
                     <li class="all-pages__item">
@@ -235,14 +237,14 @@
     </div>
 
 
-
+</div>
     <footer class="footer clearfix">
-        <div class="container-foot">
+        <div class="container">
             <div class="footer__content">
                 <p class="footer__text">Сделано с любовью и старанием <br> на курсе «HTML + CSS» в <a href="https://loftschool.com" class="footer__content-link" target="_blank">LoftSchool</a><br> Автор работы: <span class="footer__autor">Сысоева Анна</span></p>
             </div>
 
-            <div class="footer__logo"><img src="img/logo_header.png" alt="footer_logo" class="footer__logo-img"></div>
+            <div class="footer__logo"><img src="img/logo_header.png" alt="Логотип" class="footer__logo-img"></div>
 
             <div class="footer__social">
                 <div class="footer__social-title">Наши социальные сети</div>
@@ -279,7 +281,7 @@
 
                     <li class="footer__social-item">
                         <a href="#" class="footer__social-link" title="mail">
-                            <div class="footer__socialicon-circle"></div>
+                      <div class="footer__socialicon-circle"></div>
                         </a>
                     </li>
 
@@ -288,6 +290,7 @@
                 </ul>
             </div>
         </div>
+        
     </footer>
 </body>
 
