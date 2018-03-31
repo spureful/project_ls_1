@@ -51,21 +51,24 @@
 }
 
 
-.header__workschedule-link {
+.header__workschedule-button {
 
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
     line-height: 14px;
+	
+	border: none;
+	background-color: transparent;
 
 }
 
 
 
-.header__workschedule-link:hover {
+.header__workschedule-button:hover {
     color: #fff;
 }
 
-.header__workschedule-link:hover + .header__workschedule-content {
+.header__workschedule-button:hover + .header__workschedule-content {
     display: block;
 }
 

@@ -1,25 +1,26 @@
 .comments-info {
-    background: #4bb56b;
-    background-image: url(../../img/comments_bg.png);
-    margin-bottom: 59px;
+	background: #4bb56b;
+	background-image: url(../../img/comments_bg.png);
+	margin-bottom: 59px;
 }
 
 
 
 
 .comments-info-content {
+	
+	font-family: 'Roboto-Light', Arial, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	line-height: 30px;
+	text-align: left;
 
-    font-family: 'Roboto-Light', Arial, sans-serif;
-    font-size: 18px;
-    color: #fff;
-    line-height: 30px;
-    text-align: left;
-
-    padding: 40px 244px 40px 228px;
+	padding: 40px 244px 40px 228px;
+	margin: 0;
 }
 
 .comments-info__link {
-	 font-family: 'Roboto-Bold', Arial, sans-serif;
+	font-family: 'Roboto-Bold', Arial, sans-serif;
 	text-decoration: underline;
 	color: #fff;
 }
