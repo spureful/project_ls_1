@@ -63,3 +63,8 @@
 	padding-left: 180px;
 	margin-bottom: 65px;
 }
+
+.all-pages__link:hover {
+	
+	color: #2b66c7;
+}

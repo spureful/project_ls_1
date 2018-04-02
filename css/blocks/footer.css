@@ -11,7 +11,7 @@
 
 .footer__content {
     float: left;
-    width: 300px;
+    width: 295px; /*300*/
 
     font-size: 14px;
     line-height: 18px;

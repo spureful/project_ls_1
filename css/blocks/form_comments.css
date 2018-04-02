@@ -158,6 +158,8 @@
 
 /* ///РАДИОКНОПКИ)*/
 
+
+
 .commentsform__button-block {
 	float: right;
 }
@@ -166,8 +168,7 @@
 .commentsform__button {
 	margin: 0;
 	padding: 0;
-	
-		width: 153px;
+	width: 153px;
 	height: 45px;
 	
 	font-family: 'Roboto-Bold', Arial, sans-serif;
@@ -190,3 +191,16 @@
 	background-image: url(../../img/button_icon.png);
 	
 }
+
+
+.commentsform__button:hover {
+	background-color: #fff;
+	color: #1c5bc3;
+}
+
+
+.commentsform__button:hover 
+.commentsform__button-img {
+	background-image: url(../../img/button_icon_hover.png);
+	
+	}
