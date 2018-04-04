@@ -198,13 +198,34 @@
 	width: 15px;
 	height: 14px;
 	vertical-align: middle;
-
+    
+	position: relative;
+	
 	background-image: url(../../img/spritesheet.png);
+	background-repeat: no-repeat;
 	background-position: -5px -5px;
 
 
 }
 
+.commentsform__button-img:after {
+	content: "";
+	display: block;
+	width: 15px;
+	height: 14px;
+	
+	 position: absolute;
+	top: 0;
+	left: 0;
+	
+	background-image: url(../../img/spritesheet.png);
+	background-position: -30px -5px;
+	background-repeat: no-repeat;
+	
+	opacity: 0;
+	
+	transition-duration: 1s;
+}
 
 .commentsform__button:hover {
 	background-color: #fff;
@@ -214,7 +235,7 @@
 }
 
 
-.commentsform__button:hover .commentsform__button-img {
-	background-position: -30px -5px;
+.commentsform__button:hover .commentsform__button-img:after {
+	opacity: 1;
 
 }

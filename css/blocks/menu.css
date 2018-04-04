@@ -22,7 +22,7 @@
 .menu__item {
 	margin: 0;
 
-	
+
 
 
 }
@@ -40,7 +40,7 @@
 	padding: 0;
 	margin-bottom: 30px;
 
-transition-duration: 0.3s;
+	transition-duration: 0.5s;
 
 }
 
@@ -59,7 +59,7 @@ transition-duration: 0.3s;
 	width: 23px;
 	margin-right: 15px;
 	float: left;
-
+	position: relative;
 
 	background-position: -188px -5px;
 
@@ -70,6 +70,7 @@ transition-duration: 0.3s;
 	width: 23px;
 	margin-right: 15px;
 	float: left;
+	position: relative;
 
 	background-position: -245px -5px;
 
@@ -80,31 +81,96 @@ transition-duration: 0.3s;
 	width: 23px;
 	margin-right: 15px;
 	float: left;
+	position: relative;
 
 	background-position: -308px -5px;
 }
 
+/* иконки на hover псевдоэлементами */
+
+.menu__item:first-child .menu__icon:after {
+	content: "";
+	display: block;
+	height: 18px;
+	width: 23px;
 
 
-.menu__item:first-child:hover .menu__icon {
-	 background-position: -161px -5px;
-	
+	position: absolute;
+	top: 0;
+	left: 0;
+
+
+	background-image: url(../../img/spritesheet.png);
+	background-repeat: no-repeat;
+	background-position: -161px -5px;
+
+	opacity: 0;
+	transition-duration: 0.5s;
 }
 
-.menu__item:nth-child(2):hover .menu__icon {
+.menu__item:nth-child(2) .menu__icon:after {
+	content: "";
+	display: block;
+	height: 18px;
+	width: 23px;
+
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+
+	background-image: url(../../img/spritesheet.png);
+	background-repeat: no-repeat;
 	background-position: -215px -5px;
+
+	opacity: 0;
+	transition-duration: 0.5s;
+
+}
+
+.menu__item:last-child .menu__icon:after {
+	content: "";
+	display: block;
+	height: 18px;
+	width: 23px;
+
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+
+	background-image: url(../../img/spritesheet.png);
+	background-repeat: no-repeat;
+	background-position: -275px -5px;
+
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+
+
+
+.menu__item:first-child:hover .menu__icon:after {
+	 opacity: 1;
 	
 }
 
-.menu__item:last-child:hover .menu__icon {
-	background-position: -275px -5px;
+.menu__item:nth-child(2):hover .menu__icon:after {
+	 opacity: 1;
+	
+}
+
+.menu__item:last-child:hover .menu__icon:after {
+	 opacity: 1;
 }
 
 
-
+/* ...иконки на hover псевдоэлементами */
 .menu__link:hover {
 	color: #221f1f;
- 
+
 }
 
 
