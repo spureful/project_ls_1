@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=1100, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Airplanet_comments</title>
+	<title>Airplanet_Отзывы</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/normalise.css">
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -16,14 +17,14 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
-				<div class="header__logo"> <a href="index.html" class="header__logo-link"><img src="img/logo_header.png" alt="Логотип" class="header__logo-img"></a></div>
+				<div class="header__logo"> <a href="main.html" class="header__logo-link" title="На главную"><img src="img/logo_header.png" alt="Логотип" class="header__logo-img"></a></div>
 
 				<div class="header__info">
 					<a href="tel:+78000039210" class="header__phone-number">8 (800) 00-392-10</a>
 					<div class="header__workschedule">
-						
-						 <button class="header__workschedule-button">График работы</button>
-						 
+
+						<button class="header__workschedule-button">График работы</button>
+
 						<div class="header__workschedule-content">
 							<div class="header__workschedule-content-day">пн-вс: 09:00-20:00</div>
 							<div class="header__workschedule-content-lunch">обед: 14:00-14:30</div>
@@ -45,19 +46,19 @@
 
 
 
-						<li class="menu__item" >
+						<li class="menu__item">
 
-							<a href="index.html" class="menu__link">	<span class="menu__icon"> </span> главная </a>
+							<a href="main.html" class="menu__link" title="На главную">	<span class="menu__icon"> </span> главная </a>
 						</li>
 
 
 
 						<li class="menu__item menu__item_active menu__link ">
-							 <span class="menu__icon_active-comments "> </span>                       отзывы
+							<span class="menu__icon_active-comments "> </span> отзывы
 						</li>
 
 						<li class="menu__item">
-							<a href="team.html" class="menu__link"><span class="menu__icon "> </span>
+							<a href="team.html" class="menu__link" title="Экипаж"><span class="menu__icon "> </span>
 
                         экипаж</a>
 						</li>
@@ -72,7 +73,7 @@
 
 				<nav class="breadcrumb ">
 					<ul class="breadcrumb__list">
-						<li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">главная</a>
+						<li class="breadcrumb__item"><a href="main.html" class="breadcrumb__link" title="На главную">главная</a>
 						</li>
 						<li class="breadcrumb__item breadcrumb__item_active">Отзывы</li>
 					</ul>
@@ -168,7 +169,7 @@
 						<li class="all-pages__item "> <a href="#" class="all-pages__link all-pages__link">&lt;</a></li>
 
 						<li class="all-pages__item">
-							<div class="all-pages__link_active"> <a href="index.html" class="all-pages__link all-pages__link_active">1</a></div>
+							<div class="all-pages__link_active"> <a href="main.html" class="all-pages__link all-pages__link_active">1</a></div>
 						</li>
 
 						<li class="all-pages__item"> <a href="#" class="all-pages__link">2</a></li>
@@ -197,7 +198,7 @@
 		<div class="comments-info">
 			<div class="container ">
 				<p class="comments-info-content">
-					Вопросы по бронированию билетов в нашей авиакомпании принимаются <br> Для этого можно оставить <a href="#" class="comments-info__link"> заявку на сайте </a> или же позвонить по номеру круглосуточной поддержки <a href="tel:+78000039210" class="comments-info-tel"> 8 (800) 00-392-10.</a>
+					Вопросы по бронированию билетов в нашей авиакомпании принимаются <br> Для этого можно оставить <a href="#" class="comments-info__link" title="Оставить заявку"> заявку на сайте </a> или же позвонить по номеру круглосуточной поддержки <a href="tel:+78000039210" class="comments-info-tel"> 8 (800) 00-392-10.</a>
 				</p>
 			</div>
 		</div>
@@ -211,7 +212,7 @@
 				<div class="commentsform__box">
 					<div class="commentsform__col">
 						<div class="commentsform__label-box"> <label for="commentsform-name" class="commentsform__label">Ваше имя</label></div>
-						<input type="text" 			class="commentsform__text" placeholder="Андрей " id="commentsform-name">
+						<input type="text" class="commentsform__text" placeholder="Андрей " id="commentsform-name">
 					</div>
 
 					<div class="commentsform__col">
@@ -221,25 +222,25 @@
 				</div>
 
 				<div class="commentsform__label-box"><label for="commentsform-ta" class="commentsform__label">Текст отзыва</label></div>
-								
+
 				<textarea name="textarea-comment" placeholder="Мне понравилось" class="commentsform__textarea" id="commentsform-ta"></textarea>
-				
-				
+
+
 
 				<div class="commentsform__radio-block">
 					<div class="commentsform__label-box"><label for="commentsform-ta" class="commentsform__label">Отображать фото в отзыве?</label></div>
 
-				
+
 					<label class="commentsform__radio-box" tabindex="0">
 						<input type="radio" name="radio-comments" value="yes" class="commentsform__radio" checked>
-						<span class="commentsform__radio-custom"></span>
-						  <span  class="commentsform__radio-text commentsform__radio-text_checked" >Да</span>
+						<span class="commentsform__radio-custom"> <span  class="commentsform__radio-text   commentsform__radio-text_checked" >Да</span> </span>
+						
 						   </label>
 
 					<label class="commentsform__radio-box" tabindex="0">
 						<input type="radio" name="radio-comments" value="no" class="commentsform__radio">
-						<span class="commentsform__radio-custom"></span>
-						<span 	class="commentsform__radio-text"> Нет</span>
+						<span class="commentsform__radio-custom"><span 	class="commentsform__radio-text"> Нет</span></span>
+						
 						</label>
 				</div>
 
@@ -259,10 +260,10 @@
 	<footer class="footer clearfix">
 		<div class="container">
 			<div class="footer__content">
-				<p class="footer__text">Сделано с любовью и старанием  на курсе «HTML + CSS» в <a href="https://loftschool.com" class="footer__content-link" target="_blank">LoftSchool</a><br> Автор работы: <span class="footer__autor">Сысоева Анна</span></p>
+				<p class="footer__text">Сделано с любовью и старанием на курсе «HTML + CSS» в <a href="https://loftschool.com" class="footer__content-link" target="_blank" title="На сайт LoftSchool">LoftSchool</a><br> Автор работы: <span class="footer__autor">Сысоева Анна</span></p>
 			</div>
 
-			<div class="footer__logo"> <a href="index.html" class="header__logo-link"><img src="img/logo_header.png" alt="Логотип" class="footer__logo-img"> </a></div>
+			<div class="footer__logo"> <a href="main.html" class="header__logo-link" title="На главную"><img src="img/logo_header.png" alt="Логотип" class="footer__logo-img"> </a></div>
 
 			<div class="footer__social">
 				<div class="footer__social-title">Наши социальные сети</div>
@@ -271,35 +272,45 @@
 
 					<li class="footer__social-item">
 						<a href="#" class="footer__social-link" title="vkontakte">
-							<div class="footer__socialicon-circle"></div>
+							<div class="footer__socialicon-circle">
+								<div class="footer__social-img"></div>
+							</div>
 						</a>
 					</li>
 
 
 					<li class="footer__social-item">
 						<a href="#" class="footer__social-link" title="facebook">
-							<div class="footer__socialicon-circle"></div>
+							<div class="footer__socialicon-circle">
+								<div class="footer__social-img"></div>
+							</div>
 						</a>
 					</li>
 
 
 					<li class="footer__social-item">
 						<a href="#" class="footer__social-link" title="google">
-							<div class="footer__socialicon-circle"></div>
+							<div class="footer__socialicon-circle">
+								<div class="footer__social-img"></div>
+							</div>
 						</a>
 
 
 					</li>
 					<li class="footer__social-item">
 						<a href="#" class="footer__social-link" title="twitter">
-							<div class="footer__socialicon-circle"></div>
+							<div class="footer__socialicon-circle">
+								<div class="footer__social-img"></div>
+							</div>
 						</a>
 					</li>
 
 
 					<li class="footer__social-item">
 						<a href="#" class="footer__social-link" title="mail">
-							<div class="footer__socialicon-circle"></div>
+							<div class="footer__socialicon-circle">
+								<div class="footer__social-img"></div>
+							</div>
 						</a>
 					</li>
 

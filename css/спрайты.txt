@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-button_icon {
+    width: 15px;
+    height: 14px;
+    background-position: -5px -5px;
+}
+
+.sprite-button_icon_hover {
+    width: 15px;
+    height: 14px;
+    background-position: -30px -5px;
+}
+
+.sprite-footer_fb {
+    width: 6px;
+    height: 13px;
+    background-position: -55px -5px;
+}
+
+.sprite-footer_google {
+    width: 15px;
+    height: 9px;
+    background-position: -71px -5px;
+}
+
+.sprite-footer_mail {
+    width: 12px;
+    height: 9px;
+    background-position: -96px -5px;
+}
+
+.sprite-footer_twitter {
+    width: 11px;
+    height: 9px;
+    background-position: -118px -5px;
+}
+
+.sprite-footer_vk {
+    width: 12px;
+    height: 7px;
+    background-position: -139px -5px;
+}
+
+.sprite-main_icon_black {
+    width: 17px;
+    height: 18px;
+    background-position: -161px -5px;
+}
+
+.sprite-menu_main_icon {
+    width: 17px;
+    height: 18px;
+    background-position: -188px -5px;
+}
+
+.sprite-menu_star_black_icon {
+    width: 20px;
+    height: 18px;
+    background-position: -215px -5px;
+}
+
+.sprite-menu_star_icon {
+    width: 20px;
+    height: 18px;
+    background-position: -245px -5px;
+}
+
+.sprite-menu_team_black {
+    width: 23px;
+    height: 18px;
+    background-position: -275px -5px;
+}
+
+.sprite-menu_team_icon {
+    width: 23px;
+    height: 18px;
+    background-position: -308px -5px;
+}
+
+.sprite-tariffs_flower {
+    width: 27px;
+    height: 31px;
+    background-position: -341px -5px;
+}
+
+.sprite-tariffs_palette {
+    width: 28px;
+    height: 29px;
+    background-position: -378px -5px;
+}
+
+.sprite-tariffs_star {
+    width: 32px;
+    height: 32px;
+    background-position: -416px -5px;
+}

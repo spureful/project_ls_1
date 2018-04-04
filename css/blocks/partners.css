@@ -31,10 +31,12 @@
 	
 	display: inline-block;
 	filter: grayscale(100%);
+	transition-duration: 0.5s;
 
 }
 
 
 .partners__link:hover {
 	filter: none;
+	
 }

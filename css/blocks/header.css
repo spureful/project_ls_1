@@ -56,21 +56,15 @@
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
     line-height: 14px;
+	text-decoration: underline;
 	
 	border: none;
 	background-color: transparent;
+	
+	transition-duration: 0.3s;
 
 }
 
-
-
-.header__workschedule-button:hover {
-    color: #fff;
-}
-
-.header__workschedule-button:hover + .header__workschedule-content {
-    display: block;
-}
 
 
 
@@ -90,6 +84,8 @@
     border-radius: 4px;
     z-index: 2;
 
+		
+	
 }
 
 
@@ -125,4 +121,13 @@
     line-height: 18px;
     text-align: center;
     margin-top: 5px;
+}
+
+.header__workschedule-button:hover {
+    color: #fff;
+}
+
+.header__workschedule-button:hover + .header__workschedule-content {
+    display: block;
+	
 }

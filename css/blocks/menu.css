@@ -17,11 +17,11 @@
 
 	list-style: none;
 
-
 }
 
 .menu__item {
 	margin: 0;
+
 	
 
 
@@ -38,13 +38,20 @@
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-		margin-bottom: 30px;
+	margin-bottom: 30px;
+
+transition-duration: 0.3s;
+
 }
 
 
 .menu__link .menu__icon {
 	margin: 0;
 	padding: 0;
+
+	display: inline-block;
+	background-image: url(../../img/spritesheet.png);
+	background-repeat: no-repeat;
 }
 
 .menu__item:first-child .menu__icon {
@@ -53,8 +60,9 @@
 	margin-right: 15px;
 	float: left;
 
-	background-image: url(../../img/menu_main_icon.png);
-	background-repeat: no-repeat;
+
+	background-position: -188px -5px;
+
 }
 
 .menu__item:nth-child(2) .menu__icon {
@@ -63,8 +71,8 @@
 	margin-right: 15px;
 	float: left;
 
-	background-image: url(../../img/menu_star_icon.png);
-	background-repeat: no-repeat;
+	background-position: -245px -5px;
+
 }
 
 .menu__item:last-child .menu__icon {
@@ -73,30 +81,30 @@
 	margin-right: 15px;
 	float: left;
 
-	background-image: url(../../img/menu_team_icon.png);
-	background-repeat: no-repeat;
+	background-position: -308px -5px;
 }
 
+
+
 .menu__item:first-child:hover .menu__icon {
-	background-image: url(../../img/main_icon_black.png);
-	background-repeat: no-repeat;
+	 background-position: -161px -5px;
+	
 }
 
 .menu__item:nth-child(2):hover .menu__icon {
-	background-image: url(../../img/menu_star_black_icon.png);
-	background-repeat: no-repeat;
+	background-position: -215px -5px;
+	
 }
 
 .menu__item:last-child:hover .menu__icon {
-	background-image: url(../../img/menu_team_black.png);
-	background-repeat: no-repeat;
+	background-position: -275px -5px;
 }
 
 
 
 .menu__link:hover {
 	color: #221f1f;
-
+ 
 }
 
 
@@ -106,33 +114,37 @@
 
 
 .menu__icon_active-main {
-	
+
 	height: 18px;
 	width: 23px;
 	margin-right: 15px;
 	float: left;
-	background-image: 
-	url(../../img/main_icon_black.png);
+
+	background-image: url(../../img/spritesheet.png);
 	background-repeat: no-repeat;
+	background-position: -161px -5px;
 }
 
- .menu__icon_active-comments {
-	 
-	 height: 18px;
+.menu__icon_active-comments {
+
+	height: 18px;
 	width: 23px;
 	margin-right: 15px;
 	float: left;
-	background-image: url(../../img/menu_star_black_icon.png);
+
+	background-image: url(../../img/spritesheet.png);
 	background-repeat: no-repeat;
+	background-position: -215px -5px;
 }
 
 .menu__icon_active-team {
-	
+
 	height: 18px;
 	width: 23px;
 	margin-right: 15px;
 	float: left;
-	
-	background-image: url(../../img/menu_team_black.png);
+
+	background-image: url(../../img/spritesheet.png);
 	background-repeat: no-repeat;
+	background-position: -275px -5px;
 }
